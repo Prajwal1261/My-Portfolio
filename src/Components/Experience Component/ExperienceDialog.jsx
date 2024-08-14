@@ -62,7 +62,7 @@ function ExperienceDialog() {
         style={{ backdropFilter: "blur(1px)" }}
       >
         <DialogTitle
-          sx={{ m: 0, p: 2, fontWeight: "bold" }}
+          sx={{ m: 0, p: 2, fontWeight: "bold", fontSize: "1.4rem" }}
           id="customized-dialog-title"
         >
           More Insights (Experience)

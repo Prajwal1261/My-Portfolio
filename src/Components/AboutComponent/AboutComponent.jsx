@@ -24,8 +24,8 @@ function AboutComponent() {
         <Typography
           style={{
             fontSize: "1.5rem",
-            maxWidth: "70rem",
-            textAlign: "left",
+            maxWidth: "68rem",
+            textAlign: "justify",
             marginTop: "1rem",
             color: "#f5f5f5",
           }}

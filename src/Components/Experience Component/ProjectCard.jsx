@@ -51,11 +51,10 @@ function ProjectCard() {
                 Fleet Management (VECV School Solutions)
               </span>
               <Typography style={{ fontSize: "1.2rem" }}>
-                Developed a Fleet Management System for VECV School Solutions,
-                incorporating comprehensive CRUD operations for managing school
-                and student data. Implemented GraphQL APIs to facilitate
-                efficient data interactions and enhanced flexibility in managing
-                school and student information.
+                Developed a Fleet Management System for VECV School Solutions
+                with comprehensive CRUD operations and GraphQL APIs, enabling
+                efficient management and flexible data interactions for school
+                and student information.
               </Typography>
             </li>
           </ul>
