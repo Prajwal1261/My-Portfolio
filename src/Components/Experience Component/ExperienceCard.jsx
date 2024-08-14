@@ -6,6 +6,7 @@ import Typography from "@mui/material/Typography";
 import ExperienceDialog from "./ExperienceDialog";
 import { CardActions, Grid, useMediaQuery, useTheme } from "@mui/material";
 import "./ExperienceComponent.css";
+import ExperienceImg from "../../assets/exp.jpg";
 
 function ExperienceCard() {
   const theme = useTheme();
@@ -27,7 +28,7 @@ function ExperienceCard() {
         component="img"
         alt="Experience"
         height="140"
-        image="/src/assets/exp.jpg"
+        image={ExperienceImg}
         sx={{ borderBottom: "1.5px solid #7f8c8d" }}
       />
       <CardContent className="card-content">

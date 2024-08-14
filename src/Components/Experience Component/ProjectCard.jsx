@@ -8,6 +8,7 @@ import Typography from "@mui/material/Typography";
 import ProjectDialog from "./ProjectDialog";
 import { useMediaQuery, useTheme } from "@mui/material";
 import "./ExperienceComponent.css";
+import ProjectImg from "../../assets/pro1.jpg";
 
 function ProjectCard() {
   const theme = useTheme();
@@ -28,7 +29,7 @@ function ProjectCard() {
         component="img"
         alt="green iguana"
         height="140"
-        image="/src/assets/pro1.jpg"
+        image={ProjectImg}
         sx={{ borderBottom: "1.5px solid #7f8c8d" }}
       />
       <CardContent className="card-content">
