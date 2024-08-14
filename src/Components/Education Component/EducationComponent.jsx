@@ -2,7 +2,6 @@ import { Grid, Typography } from "@mui/material";
 import React from "react";
 import SchoolIcon from "@mui/icons-material/School";
 import TimelineIcon from "@mui/icons-material/Timeline";
-import KLE from "../../assets/kletech.jpeg";
 
 function EducationComponent() {
   return (
@@ -45,7 +44,7 @@ function EducationComponent() {
               B.E.,
             </Typography>
             <img
-              src={KLE}
+              src="kletech.jpeg"
               alt="KLE Technological University"
               style={{
                 marginLeft: "2rem",
