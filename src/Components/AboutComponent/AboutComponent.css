@@ -1,0 +1,44 @@
+.mainText {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.links {
+  gap: 2rem;
+  margin-top: 1rem;
+  font-size: x-large;
+  display: flex;
+  justify-content: center;
+}
+
+.links a {
+  text-decoration: underline;
+  text-underline-offset: 0.2rem;
+  color: #1e90ff;
+}
+
+.links a:hover {
+  color: #1e90ff;
+}
+
+.skill {
+  display: flex;
+  justify-content: center;
+}
+
+.wave {
+  display: inline-block;
+  margin-left: 0.5rem;
+  animation: wave-animation 1.5s infinite ease-in-out;
+}
+
+@keyframes wave-animation {
+  0%,
+  100% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(15deg);
+  }
+}
