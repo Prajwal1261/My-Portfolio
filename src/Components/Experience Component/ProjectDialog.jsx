@@ -8,6 +8,7 @@ import IconButton from "@mui/material/IconButton";
 import CloseIcon from "@mui/icons-material/Close";
 import Typography from "@mui/material/Typography";
 import "./ExperienceComponent.css";
+import { Grid } from "@mui/material";
 
 const BootstrapDialog = styled(Dialog)(({ theme }) => ({
   "& .MuiDialogContent-root": {
@@ -57,24 +58,30 @@ function ProjectDialog() {
         open={open}
         style={{ backdropFilter: "blur(1px)" }}
       >
-        <DialogTitle
-          sx={{ m: 0, p: 2, fontWeight: "bold", fontSize: "1.4rem" }}
-          id="customized-dialog-title"
-        >
-          More Insights (Project)
-        </DialogTitle>
-        <IconButton
-          aria-label="close"
-          onClick={handleClose}
-          sx={{
-            position: "absolute",
-            right: 8,
-            top: 8,
-            color: (theme) => theme.palette.grey[500],
+        <Grid
+          style={{
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "space-between",
           }}
         >
-          <CloseIcon style={{ color: "red" }} />
-        </IconButton>
+          <DialogTitle
+            sx={{ m: 0, p: 2, fontWeight: "bold", fontSize: "1.4rem" }}
+            id="customized-dialog-title"
+          >
+            More Insights (Project)
+          </DialogTitle>
+          <IconButton
+            aria-label="close"
+            onClick={handleClose}
+            sx={{
+              color: (theme) => theme.palette.grey[500],
+              marginRight: "1rem",
+            }}
+          >
+            <CloseIcon style={{ color: "red" }} />
+          </IconButton>
+        </Grid>
         <DialogContent dividers>
           <Typography
             variant="h6"

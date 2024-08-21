@@ -8,7 +8,7 @@ function App() {
 
   return (
     <>
-      <NavBar setSelectedMenu={setSelectedMenu} />
+      <NavBar selectedMenu={selectedMenu} setSelectedMenu={setSelectedMenu} />
       <BodyContainer selectedMenu={selectedMenu} />
     </>
   );
