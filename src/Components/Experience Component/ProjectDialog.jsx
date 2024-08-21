@@ -66,7 +66,7 @@ function ProjectDialog() {
           }}
         >
           <DialogTitle
-            sx={{ m: 0, p: 2, fontWeight: "bold", fontSize: "1.4rem" }}
+            sx={{ m: 0, p: 2, fontWeight: "bold", fontSize: "1.1rem" }}
             id="customized-dialog-title"
           >
             More Insights (Project)
