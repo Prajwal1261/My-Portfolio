@@ -37,6 +37,16 @@ const CustomButton = styled(Button)(({ theme }) => ({
     borderColor: "#f5f5f5",
     backgroundColor: "transparent",
   },
+
+  "&:focus": {
+    outline: "none",
+    boxShadow: "none",
+  },
+
+  "&:focus-visible": {
+    outline: "none",
+    boxShadow: "none",
+  },
 }));
 
 function ExperienceDialog() {
@@ -80,6 +90,14 @@ function ExperienceDialog() {
             sx={{
               color: (theme) => theme.palette.grey[500],
               marginRight: "1rem",
+              '&:focus': {
+                outline: 'none',
+                boxShadow: 'none',
+              },
+              '&:focus-visible': {
+                outline: 'none',
+                boxShadow: 'none',
+              },
             }}
           >
             <CloseIcon sx={{ color: "red" }} />

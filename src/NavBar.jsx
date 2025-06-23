@@ -76,6 +76,21 @@ export default function NavBar({ selectedMenu, setSelectedMenu }) {
               aria-haspopup="true"
               onClick={handleOpenNavMenu}
               color="inherit"
+              sx={{
+                p: 0.75,
+                '&:hover': {
+                  backgroundColor: 'rgba(255,255,255,0.1)', // Optional for better hover feel
+                },
+                '&:focus': {
+                  outline: 'none',
+                  boxShadow: 'none',
+                },
+
+                '&:focus-visible': {
+                  outline: 'none',
+                  boxShadow: 'none',
+                },
+              }}
             >
               <MenuIcon />
             </IconButton>
