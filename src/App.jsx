@@ -1,6 +1,6 @@
 import { Grid } from "@mui/material";
 import "./App.css";
-import { BrowserRouter as Router, Routes, Route, useLocation, Link } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route, useLocation, Link } from 'react-router-dom';
 import ExperienceComponent from "./Components/Experience Component/ExperienceComponent";
 import ResumeComponent from "./Components/ResumeComponent/ResumeComponent";
 import AboutComponent from "./Components/AboutComponent/AboutComponent";
