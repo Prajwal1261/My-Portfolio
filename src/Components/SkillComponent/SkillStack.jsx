@@ -21,11 +21,11 @@ const Item = styled(Paper)(({ theme }) => ({
   padding: theme.spacing(1),
   textAlign: "center",
   color: "#f5f5f5",
-  fontSize: "1.4rem",
+  fontSize: "1.2rem",
   display: "flex",
   alignItems: "center",
   justifyContent: "center",
-  flex: "1 1 15%", // Make each item take 15% of the row width
+  flex: "1 1 12%", // Make each item take 12% of the row width
   margin: "0.5rem",
   border: "1.5px solid #7f8c8d",
 }));
@@ -36,25 +36,25 @@ const skillData = [
     skill: "React.js",
     imgSrc: ReactImage,
     imgAlt: "React.js",
-    imgWidth: "40px",
+    imgWidth: "30px",
   },
   {
     skill: "JavaScript",
     imgSrc: JS,
     imgAlt: "JavaScript",
-    imgWidth: "40px",
+    imgWidth: "30px",
   },
-  { skill: "CSS", imgSrc: CSS, imgAlt: "CSS", imgWidth: "40px" },
-  { skill: "GraphQL", imgSrc: GraphQl, imgAlt: "GraphQL", imgWidth: "40px" },
+  { skill: "CSS", imgSrc: CSS, imgAlt: "CSS", imgWidth: "30px" },
+  { skill: "GraphQL", imgSrc: GraphQl, imgAlt: "GraphQL", imgWidth: "30px" },
   {
     skill: "Sequelize",
     imgSrc: Sequelize,
     imgAlt: "Sequelize",
-    imgWidth: "40px",
+    imgWidth: "30px",
   },
-  { skill: "Kafka", imgSrc: Kafka, imgAlt: "Kafka", imgWidth: "40px" },
-  { skill: "SQL", imgSrc: SQL, imgAlt: "SQL", imgWidth: "40px" },
-  { skill: "Git", imgSrc: Git, imgAlt: "Git", imgWidth: "40px" },
+  { skill: "Kafka", imgSrc: Kafka, imgAlt: "Kafka", imgWidth: "30px" },
+  { skill: "SQL", imgSrc: SQL, imgAlt: "SQL", imgWidth: "30px" },
+  { skill: "Git", imgSrc: Git, imgAlt: "Git", imgWidth: "30px" },
 ];
 
 function SkillStack() {
@@ -64,7 +64,7 @@ function SkillStack() {
         direction="row"
         flexWrap="wrap"
         justifyContent="center"
-        sx={{ maxWidth: "70rem" }}
+        sx={{ maxWidth: "69rem" }}
       >
         {skillData.map(({ skill, imgSrc, imgAlt, imgWidth }) => (
           <Item key={skill}>

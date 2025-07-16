@@ -12,7 +12,6 @@ function AboutComponent() {
           fontSize: "2rem",
           display: "flex",
           justifyContent: "center",
-          marginTop: "2rem",
           color: "#f5f5f5",
           fontWeight: "bold",
         }}
@@ -22,12 +21,12 @@ function AboutComponent() {
       </Typography>
       <Grid className="mainText">
         <Typography
-          style={{
-            fontSize: "1.5rem",
+           style={{
+            fontSize: "1.25rem",
             maxWidth: "68rem",
             textAlign: "justify",
-            marginTop: "1rem",
             color: "#f5f5f5",
+            lineHeight: 1.7,
           }}
         >
           I’m a software engineer with a strong focus on problem-solving and
@@ -39,7 +38,8 @@ function AboutComponent() {
           collaboratively to drive impactful solutions.
         </Typography>
       </Grid>
-      <Grid container className="links">
+    <Grid className="linksWrapper">
+      <Grid className="links">
         <Grid item>
           <Link
             href="https://www.linkedin.com/in/prajwal-allitti"
@@ -62,7 +62,9 @@ function AboutComponent() {
           <Link href="mailto:allittiprajwal230@gmail.com">Email</Link>
         </Grid>
       </Grid>
-      <Grid className="skill">
+    </Grid>
+      <Grid className="skillWrapper">
+        <Grid className="skillText">
         <Typography
           style={{
             marginTop: "2rem",
@@ -73,11 +75,14 @@ function AboutComponent() {
         >
           My Skills
         </Typography>
+        </Grid>
       </Grid>
       <Grid>
         <SkillStack />
       </Grid>
+      <Grid >
       <EducationComponent />
+      </Grid>
     </Grid>
   );
 }

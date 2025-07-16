@@ -5,31 +5,36 @@ import TimelineIcon from "@mui/icons-material/Timeline";
 
 function EducationComponent() {
   return (
-    <Grid>
+<Grid container sx={{ display: "flex", justifyContent: "center", width: "100%", padding: "0.5rem" }}>
+  <Grid item sx={{ maxWidth: "68rem", width: "100%" }}>
       <Typography
         style={{
           fontSize: "2rem",
           fontFamily: "Inter, Sans-serif",
           display: "flex",
-          justifyContent: "center",
-          marginTop: "2rem",
+          justifyContent: "flex-start",
+          marginTop: "1rem",
           color: "#f5f5f5",
           fontWeight: "bold",
         }}
       >
         My Education
       </Typography>
+      </Grid>
+    <Grid 
+    sx={{width:"100%", display: "flex", justifyContent: "center"}}
+    >
       <Grid
-        style={{ display: "flex", justifyContent: "center", marginTop: "1rem" }}
+        sx={{width: "68rem", display: "flex", justifyContent: "start",  }}
       >
         <Typography
           style={{
             fontSize: "1.5rem",
-            maxWidth: "70rem",
-            textAlign: "left",
+            // maxWidth: "70rem",
+            // textAlign: "left",
             marginTop: "1rem",
             color: "#2c3e50",
-            position: "relative", // For any future background effects
+            // position: "relative",            // For any future background effects
           }}
           component="span"
         >
@@ -70,7 +75,6 @@ function EducationComponent() {
           <span
             style={{
               marginTop: "0.6rem",
-              display: "flex",
               alignItems: "center",
               fontSize: "1.24rem",
               color: "#f5f5f5",
@@ -82,6 +86,7 @@ function EducationComponent() {
         </Typography>
       </Grid>
     </Grid>
+  </Grid>
   );
 }
 
