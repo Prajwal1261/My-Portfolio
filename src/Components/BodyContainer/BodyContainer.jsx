@@ -1,25 +1,31 @@
-import { Grid } from "@mui/material";
-import React from "react";
-import ExperienceComponent from "../Experience Component/ExperienceComponent";
-import AboutComponent from "../AboutComponent/AboutComponent";
-import ResumeComponent from "../ResumeComponent/ResumeComponent";
+import React from 'react';
+import { Link } from 'react-router-dom';
 
-function BodyContainer(props) {
+function BodyContainer() {
   return (
-    <Grid>
-      {props.selectedMenu == 0 ? (
-        <Grid>
-          <AboutComponent />
-        </Grid>
-      ) : null}
-      {props.selectedMenu == 1 ? (
-        <ExperienceComponent />
-      ) : props.selectedMenu == 2 ? (
-        <Grid>
-          <ResumeComponent />
-        </Grid>
-      ) : null}
-    </Grid>
+    <div style={{ 
+      textAlign: 'center', 
+      padding: '4rem', 
+      color: '#333' 
+    }}>
+      <h1 style={{ fontSize: '3rem', marginBottom: '1rem', color:"white" }}>
+        404 - Page Not Found
+      </h1>
+      <p style={{ fontSize: '1.2rem', marginBottom: '2rem', color:"white" }}>
+        The page you’re looking for doesn’t exist.
+      </p>
+      <Link 
+        to="/" 
+        style={{
+          textDecoration: 'none',
+          color: '#1976d2',
+          fontWeight: 'bold',
+          fontSize: '1rem'
+        }}
+      >
+        ← Go back to Home
+      </Link>
+    </div>
   );
 }
 
